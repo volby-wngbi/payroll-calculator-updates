@@ -2,8 +2,13 @@ name: Publish macOS release
 
 on:
   push:
-    tags:
-      - "v*"
+    branches:
+      - main
+    paths:
+      - latest.json
+      - RELEASE_NOTES.md
+      - release-assets/payroll-calculator.dmg
+      - .github/workflows/publish-release.yml
 
 permissions:
   contents: write
@@ -16,8 +21,10 @@ jobs:
       - name: Create release and upload DMG
         env:
           GH_TOKEN: ${{ github.token }}
-        run: >-
-          gh release create "$GITHUB_REF_NAME"
-          "release-assets/payroll-calculator.dmg#payroll-calculator.dmg"
-          --title "월급계산기 $GITHUB_REF_NAME"
-          --notes-file RELEASE_NOTES.md
+        run: |
+          VERSION="$(jq -r '.version' latest.json)"
+          TAG_NAME="v$VERSION"
+          gh release create "$TAG_NAME" \
+            "release-assets/payroll-calculator.dmg#payroll-calculator.dmg" \
+            --title "월급계산기 $TAG_NAME" \
+            --notes-file RELEASE_NOTES.md
