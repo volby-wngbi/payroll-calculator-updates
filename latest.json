@@ -1,5 +1,5 @@
 {
-  "version": "0.3.5",
-  "downloadURL": "https://github.com/volby-wngbi/payroll-calculator-updates/releases/download/v0.3.5/payroll-calculator-0.3.5.dmg",
-  "releaseNotes": "월급계산기 앱 아이콘과 앱 내부 로고를 새로운 블루·시안 리본 디자인으로 변경했습니다."
+  "version": "1.0.0",
+  "downloadURL": "https://github.com/volby-wngbi/payroll-calculator-updates/releases/download/v1/%EC%9B%94%EA%B8%89%EA%B3%84%EC%82%B0%EA%B8%B0.dmg",
+  "releaseNotes": "월급계산기 정식 v1입니다. 최신 로고와 현재까지 완성된 급여·근태 계산 기능을 포함합니다."
 }
