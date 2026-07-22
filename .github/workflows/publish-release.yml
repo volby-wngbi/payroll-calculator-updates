@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - latest.json
+      - appcast.xml
       - RELEASE_NOTES.md
       - release-assets/payroll-calculator.dmg
       - .github/workflows/publish-release.yml
