@@ -1,5 +1,5 @@
 {
-  "version": "1.1.0",
-  "downloadURL": "https://github.com/volby-wngbi/payroll-calculator-updates/releases/download/v1.1.0/payroll-calculator.dmg",
-  "releaseNotes": "앱 안에서 업데이트 다운로드, 설치, 자동 재실행까지 이어지는 기능을 추가했습니다. 기존 1.0.x에서는 이번 DMG를 한 번 직접 설치해 주세요."
+  "version": "1.2.0",
+  "downloadURL": "https://github.com/volby-wngbi/payroll-calculator-updates/releases/download/v1.2.0/payroll-calculator.dmg",
+  "releaseNotes": "입력한 연봉과 비과세 항목에 맞춰 4대보험 예상액과 2026년 근로소득 간이세액을 사람별로 자동 계산합니다."
 }
