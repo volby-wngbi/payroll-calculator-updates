@@ -1,2 +1,8 @@
-# payroll-calculator-updates
-월급계산기 macOS 앱 업데이트 배포
+# 월급계산기 업데이트
+
+월급계산기 macOS 앱의 설치 파일과 최신 버전 정보를 제공하는 배포 전용 저장소입니다.
+
+- `latest.json`: 앱에서 확인하는 최신 버전 정보
+- GitHub Releases: 설치용 DMG
+
+소스코드와 사용자 급여 데이터는 이 저장소에 포함하지 않습니다.
