@@ -1,0 +1,23 @@
+name: Publish macOS release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Create release and upload DMG
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: >-
+          gh release create "$GITHUB_REF_NAME"
+          "release-assets/payroll-calculator.dmg#payroll-calculator.dmg"
+          --title "월급계산기 $GITHUB_REF_NAME"
+          --notes-file RELEASE_NOTES.md
