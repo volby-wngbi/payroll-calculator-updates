@@ -3,18 +3,15 @@
     <channel>
         <title>월급계산기</title>
         <item>
-            <title>1.3.6</title>
-            <pubDate>Sun, 26 Jul 2026 23:29:08 +0900</pubDate>
-            <sparkle:version>20</sparkle:version>
-            <sparkle:shortVersionString>1.3.6</sparkle:shortVersionString>
+            <title>1.3.7</title>
+            <pubDate>Mon, 27 Jul 2026 00:05:24 +0900</pubDate>
+            <sparkle:version>21</sparkle:version>
+            <sparkle:shortVersionString>1.3.7</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[- 급여 금액 공개용 숫자 4자리 비밀번호 설정·확인 기능 추가
-- 금액 숨김 시 급여 조건의 입사일·연봉·통상시급·비과세 항목도 함께 보호
-- 설정 탭에서 기존 로그인 계정, 금액 비밀번호, 입력값 초기화를 한 곳에서 관리
-- 업데이트 전 각 PC에 등록한 로그인 계정과 암호화된 급여 데이터 자동 유지
+            <description sparkle:format="markdown"><![CDATA[야간근로
 ]]></description>
-            <enclosure url="https://github.com/volby-wngbi/payroll-calculator-updates/releases/download/v1.3.6/payroll-calculator.dmg" length="3981948" type="application/octet-stream" sparkle:edSignature="u0QG8N2CZKcuX7LewjfDYqNPeeNtQpDtf6sr+B0TDJcP2NAH48QnOw7uivSII4R8+RBeChHLhKeVAZ81Rz5WCQ=="/>
+            <enclosure url="https://github.com/volby-wngbi/payroll-calculator-updates/releases/download/v1.3.7/payroll-calculator.dmg" length="3984838" type="application/octet-stream" sparkle:edSignature="RrDVkqUni6/GRVfzvJVZ1jZPWuaM7AdIHbKPYrvj0iCb5Ho7DSQZF09RN5T4k948sM35c/sHif8ciCG1Ii3VCw=="/>
         </item>
     </channel>
 </rss>
