@@ -3,15 +3,15 @@
     <channel>
         <title>월급계산기</title>
         <item>
-            <title>1.3.1</title>
-            <pubDate>Sun, 26 Jul 2026 19:08:03 +0900</pubDate>
-            <sparkle:version>15</sparkle:version>
-            <sparkle:shortVersionString>1.3.1</sparkle:shortVersionString>
+            <title>1.3.3</title>
+            <pubDate>Sun, 26 Jul 2026 21:31:43 +0900</pubDate>
+            <sparkle:version>17</sparkle:version>
+            <sparkle:shortVersionString>1.3.3</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <description sparkle:format="markdown"><![CDATA[일부 기능 개선
 ]]></description>
-            <enclosure url="https://github.com/volby-wngbi/payroll-calculator-updates/releases/download/v1.3.1/payroll-calculator.dmg" length="3692607" type="application/octet-stream" sparkle:edSignature="VKU6v/kXekwn2n+MW4jNg5g9nz1V92N7lQ/EIwndqJHKtIB0mNRlBj2vAchQSdF2fgfmlMk3cxyKS65Zq7fABQ=="/>
+            <enclosure url="https://github.com/volby-wngbi/payroll-calculator-updates/releases/download/v1.3.3/payroll-calculator.dmg" length="3993152" type="application/octet-stream" sparkle:edSignature="wDDA3WaIyrk0CjZocvq1yUIYQte7jY+q3FZ7kbB7ZtkaQEsnQc1mdSwhod6Q8f1eP8lRVx6zCFxgczXOG0wPBg=="/>
         </item>
     </channel>
 </rss>
