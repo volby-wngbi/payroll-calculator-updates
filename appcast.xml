@@ -3,15 +3,16 @@
     <channel>
         <title>월급계산기</title>
         <item>
-            <title>1.3.3</title>
-            <pubDate>Sun, 26 Jul 2026 21:31:43 +0900</pubDate>
-            <sparkle:version>17</sparkle:version>
-            <sparkle:shortVersionString>1.3.3</sparkle:shortVersionString>
+            <title>1.3.4</title>
+            <pubDate>Sun, 26 Jul 2026 21:48:40 +0900</pubDate>
+            <sparkle:version>18</sparkle:version>
+            <sparkle:shortVersionString>1.3.4</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[일부 기능 개선
+            <description sparkle:format="markdown"><![CDATA[- 급여 조건에 입사일 입력·저장 기능 추가
+- 업데이트 안내에 실제 변경 내용 표시
 ]]></description>
-            <enclosure url="https://github.com/volby-wngbi/payroll-calculator-updates/releases/download/v1.3.3/payroll-calculator.dmg" length="3993152" type="application/octet-stream" sparkle:edSignature="wDDA3WaIyrk0CjZocvq1yUIYQte7jY+q3FZ7kbB7ZtkaQEsnQc1mdSwhod6Q8f1eP8lRVx6zCFxgczXOG0wPBg=="/>
+            <enclosure url="https://github.com/volby-wngbi/payroll-calculator-updates/releases/download/v1.3.4/payroll-calculator.dmg" length="3993705" type="application/octet-stream" sparkle:edSignature="4lSlsKTNBQDmg2QWVzGXA/Bs6hEbxiy2bkWXwv/t9rmhRPupYHLQ7zz1vTPsUvT5sOtFkdSLdnuNFWCSNRieBA=="/>
         </item>
     </channel>
 </rss>
