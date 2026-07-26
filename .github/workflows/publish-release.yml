@@ -19,13 +19,35 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Create release and upload DMG
+      - name: Remove previous releases and tags
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           VERSION="$(jq -r '.version' latest.json)"
           TAG_NAME="v$VERSION"
-          gh release create "$TAG_NAME" \
-            "release-assets/payroll-calculator.dmg#payroll-calculator.dmg" \
-            --title "월급계산기 $TAG_NAME" \
-            --notes-file RELEASE_NOTES.md
+          gh release list --limit 100 --json tagName --jq '.[].tagName' |
+            while read -r OLD_TAG; do
+              if [ "$OLD_TAG" != "$TAG_NAME" ]; then
+                gh release delete "$OLD_TAG" --cleanup-tag --yes
+              fi
+            done
+
+      - name: Publish current release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          VERSION="$(jq -r '.version' latest.json)"
+          TAG_NAME="v$VERSION"
+          if gh release view "$TAG_NAME" >/dev/null 2>&1; then
+            gh release upload "$TAG_NAME" \
+              "release-assets/payroll-calculator.dmg#payroll-calculator.dmg" \
+              --clobber
+            gh release edit "$TAG_NAME" \
+              --title "월급계산기 $TAG_NAME" \
+              --notes-file RELEASE_NOTES.md
+          else
+            gh release create "$TAG_NAME" \
+              "release-assets/payroll-calculator.dmg#payroll-calculator.dmg" \
+              --title "월급계산기 $TAG_NAME" \
+              --notes-file RELEASE_NOTES.md
+          fi
